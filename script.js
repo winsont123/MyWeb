@@ -4,6 +4,7 @@ const link=document.querySelector('.link');
 const nav=document.querySelector('nav');
 const nama=document.querySelector(".judul h1");
 const ketik=document.querySelector(".ketik");
+const posisi=link.querySelectorAll("ul li a");
 // event click navbar
 ham.addEventListener('click',()=>{
     ham.classList.toggle('aktif');
@@ -37,6 +38,12 @@ let timer=setInterval(function(){
 function complete(){
     clearInterval(timer);
 }
+posisi.forEach((a,b)=>{
+    a.addEventListener('click',function(){
+        link.classList.remove('active');
+        ham.classList.remove('aktif');
+    })
+})
 
 
 
