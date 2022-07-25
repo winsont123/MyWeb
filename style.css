@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior:smooth;
+    }
+
 body{
     overflow-x:hidden ;
 }
@@ -210,7 +214,10 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+margin-bottom: 12px;
 }
+
 #contactUs h2{
     text-align: center;
     margin-bottom: 50px;
@@ -235,7 +242,16 @@ nav{
 
 footer{
     background-color: rgb(19, 19, 30);
+    color: white;
 }
+.foot{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+
+
 /* responsive */
 
 @media(max-width:768px){
@@ -355,19 +371,39 @@ footer{
         
         
     }
+@media(max-width:450px){
+    .card{
+        max-width: 350px;
+    }
+    .card .gambar{
+        width: 350px;
+    }
+    .card img{
+        width: 350px;
+    }
+}
 @media(max-width:360px){
     .link ul li a{
         font-size: 25px;
     }
+    .card{
+        max-width: 250px;
+    }
     .card .gambar{
-        width:200px;
+        width:250px;
         height: 208px;
         overflow: hidden;
         display: flex;
         justify-content: center;
     }
     .card img{
-        width: 200px;
+        width: 250px;
         transition: 1s;
+    }
+    
+    #contactUs .semua{
+        padding: 0;
+        margin-top: 12px;
+        margin-bottom: 12px;
     }
 }
