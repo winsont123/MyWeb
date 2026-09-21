@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Winsont | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<!-- my font for name  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
-<!-- my css -->
-<link rel="stylesheet" href="style.css">
 <body>
     <nav>
         <div class="logo">
@@ -21,8 +19,10 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#MyPortofolio">Portfolio</a></li>
-                <li><a href="#contactUs">Contact Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contactUs">Contact</a></li>
             </ul>
         </div>
         <div class="hamburger">
@@ -31,75 +31,91 @@
             <span></span>
         </div>
     </nav>
-    <section id="home">
+
+    <header id="home">
         <div class="judul">
             <div class="atas">
-                <h1>Hi,Im Winsont</h1>
+                <h1></h1>
                 <div class="ketik"></div>
             </div>
             <span>
-                <h6>WEB DEVELOPER | PROGRAMMER</h6>
+                <p class="subtitle"></p>
             </span>
+            <a href="#" class="btn-cv" target="_blank">Download CV</a>
         </div>
-    </section>
-    <section id="aboutMe">
+    </header>
+
+    <section id="aboutMe" class="section-padding">
         <div class="isi">
             <div class="face">
-                <img src="img/ws.jpg" alt="">
+                <img alt="Foto Profil">
             </div>
             <div class="konten">
                 <h2>About Me</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam animi minus adipisci at, laborum facere neque fuga vel doloremque, eveniet obcaecati maxime totam eos incidunt et, optio molestiae nesciunt pariatur enim odio. Aspernatur maxime at aliquid debitis quos laboriosam rem atque qui, necessitatibus laudantium nesciunt blanditiis corrupti! Exercitationem, rem accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus facere unde hic voluptates dicta perferendis quasi eligendi qui aperiam perspiciatis dolorum corporis possimus deserunt, ea, repellat dignissimos officiis sed vero saepe porro incidunt libero commodi neque id. Voluptates odit, possimus optio, nobis, dolores sed itaque quae unde commodi dicta deserunt!</p>
+                <p class="about-desc"></p>
+                <div class="education">
+                    <h3>Education</h3>
+                    <p class="edu-text"></p>
+                </div>
             </div>
         </div>
     </section>
-    <section id="MyPortofolio">
+
+    <section id="experience" class="section-padding bg-alt">
         <div class="all">
-            <h2>My Porotfolio</h2>
-            <div class="konten">
-                <div class="card">
-                    <div class="gambar">
-                        <img src="img/developer.jpg" alt="">
-                    </div>
-                    <div class="text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatibus! Ipsam necessitatibus aspernatur enim magnam excepturi voluptate dolor suscipit animi sunt?</p></div>
+            <h2>Experience & Volunteer</h2>
+            <div class="timeline" id="experienceList"></div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section-padding">
+        <div class="all">
+            <h2>Achievements</h2>
+            <div class="timeline" id="achievementsList"></div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding bg-alt">
+        <div class="all">
+            <h2>My Portfolio or Project</h2>
+            <div class="konten" id="projectList"></div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+        <div class="all">
+            <h2>Skills & Languages</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="tags" id="techSkills"></div>
                 </div>
-                <div class="card">
-                    <div class="gambar">
-                        <img src="img/developer.jpg" alt="">
-                    </div>
-                    <div class="text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatibus! Ipsam necessitatibus aspernatur enim magnam excepturi voluptate dolor suscipit animi sunt?</p></div>
-                </div>
-                <div class="card">
-                    <div class="gambar">
-                        <img src="img/developer.jpg" alt="">
-                    </div>
-                    <div class="text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatibus! Ipsam necessitatibus aspernatur enim magnam excepturi voluptate dolor suscipit animi sunt?</p></div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="tags" id="langSkills"></div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contactUs">
+
+    <section id="contactUs" class="section-padding bg-alt">
         <div class="semua">
             <h2>Contact Me</h2>
-            <div class="contact">
-                <img src="img/icons8-whatsapp-480.png" alt="">
-                <img src="img/icons8-gmail-480.png" alt="">
-                <img src="img/icons8-instagram-240.png" alt="">
-            </div>
+            <p class="contact-sub">Let's build something cool together.</p>
+            <div class="contact" id="contactList"></div>
         </div>
     </section>
+
     <footer>
         <div class="foot">
             <div class="logoFoot">
-                <h3>My Portofolio</h3>
+                <h3 id="footerName"></h3>
             </div>
-            <ul>
-                <li>Gmail icon by Icons8</li>
-                <li>WhatsApp icon by Icons8</li>
-                <li>Instagram icon by Icons8</li>
-            </ul>
+            <ul id="footerCredits"></ul>
         </div>
     </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
